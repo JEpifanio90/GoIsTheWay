@@ -10,9 +10,18 @@ func init() {
 
 func Showcase() {
 	fmt.Printf("========== Here's a global Variable %d of type: %T \n", globalVariable, globalVariable)
-	nonExported()
+	intPlayground()
 }
 
-func nonExported() {
-	fmt.Println("This guy gets discriminated by it's own name")
+func intPlayground() {
+	fmt.Println("==================== Int Playground ====================")
+	fmt.Println("//////////////////// Unsigned (0 to inf) ///////////////")
+	var ubit int8 = 10
+	fmt.Printf("8 Bit %T : %v \n", ubit, ubit)
+	//var u16V int8 = 10
+	//fmt.Printf("8 Bit %T : %d", ubit, ubit)
+}
+
+func floatPlayground() {
+
 }
